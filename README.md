@@ -16,13 +16,13 @@ How to use
 vagrant up
 ```
 
-5. Ssh into the vm to start and stop the server. The jekyll folder will can be found at /home/vagrant/ 
+Ssh into the vm. 
 
 ```
 vagrant ssh
 ```
 
-6. Then run the server
+Then run the server
 
 ```
 gem install bundler
@@ -31,15 +31,15 @@ bundle install
 bundle exec jekyll serve
 ```
 
-7. Open 127.0.0.1:4000 to view the web-site on host
+Open 127.0.0.1:4000 to view the web-site on host
 
-8. To exit the ssh session simple run 
+To exit the ssh session simple run 
 
 ```
 exit
 ```
 
-9. Then to teardown the vm run  
+Then to teardown the vm run  
 
 ```
 vagrant destroy
