@@ -5,9 +5,7 @@ apt-get -y update
 # Install dependencies 
 apt-get -y install python-software-properties 
 apt-get -y install build-essential 
-apt-get -y nodejs 
-
-#apt-get -y update
+apt-get -y install nodejs 
 
 # Install RVM
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
@@ -20,8 +18,7 @@ rvm install 2.3.0-dev
 ruby -v
 
 # Install jekyll
-gem install jekyll
-gem install bundler
+gem install jekyll bundler
 echo 'export PATH="$PATH:$HOME/.rvm/gems/ruby-2.3.0-dev/bin"' >> ~/.profile
 
 cd $HOME

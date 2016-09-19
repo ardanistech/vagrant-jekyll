@@ -28,7 +28,7 @@ Then run the server
 gem install bundler
 cd /ardanis
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve -–host 0.0.0.0
 ```
 
 Open 127.0.0.1:4000 to view the web-site on host
