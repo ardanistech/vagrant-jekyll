@@ -15,11 +15,13 @@ source $HOME/.rvm/scripts/rvm
 # Install ruby 2.3.0
 rvm use --default --install 2.3.0
 rvm install 2.3.0-dev
-ruby -v
+ruby -v && which ruby
+
+# Install bundler
+rvm all do gem install bundler && bundle -v && which bundle
 
 # Install jekyll
-gem install jekyll bundler
-echo 'export PATH="$PATH:$HOME/.rvm/gems/ruby-2.3.0-dev/bin"' >> ~/.profile
+gem install jekyll 
 
 cd $HOME
 chmod +x runserve.sh

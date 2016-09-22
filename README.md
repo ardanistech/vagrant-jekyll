@@ -16,7 +16,7 @@ How to use
 vagrant up
 ```
 
-Ssh into the vm. 
+ssh into the vm. 
 
 ```
 vagrant ssh
@@ -25,13 +25,12 @@ vagrant ssh
 Then run the server
 
 ```
-gem install bundler
-cd /ardanis
+cd ardanis
 bundle install
-bundle exec jekyll serve -–host 0.0.0.0
+bundle exec jekyll serve --host 0.0.0.0
 ```
 
-Open 127.0.0.1:4000 to view the web-site on host
+Open 127.0.0.1:4001 to view the web-site on host
 
 To exit the ssh session simple run 
 
